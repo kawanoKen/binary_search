@@ -526,7 +526,7 @@ int main(){
 \item \texttt{int lb, ub;} のような関数の内側にある変数は\textbf{ローカル変数}と呼ばれ、その関数の内側からだけアクセスできる。明示的に初期化しない場合は\textbf{どのような値になっているか保証はない}。必ず初期化をすること。
 \item \texttt{scanf("\%d", \&n);} は\textbf{標準入力から整数を読み込み}\texttt{n}に代入する命令文である。
 標準入力から整数を2つ読み込んで\texttt{int}型の変数\texttt{a}と\texttt{b}に代入したい場合は\texttt{scanf("\%d\%d", \&a, \&b);} とする。
-\item \texttt{printf("\%d\textbackslash n", \&n);} は標準出力へ整数\texttt{n}と改行コード \texttt{\textbackslash n}を出力する。
+\item \texttt{printf("\%d\textbackslash n", n);} は標準出力へ整数\texttt{n}と改行コード \texttt{\textbackslash n}を出力する。
 \item \texttt{return 0;} はmain関数の最後に書いておこう(書かなくてもエラーが起きる訳ではないが)。これは「プログラムが正常に終了した」ということを表わしている。
 エラーで終了するときは\texttt{return 1;}など0以外の値を返すようにする。この授業ではエラーによる終了は扱わないので、main関数の最後に\texttt{return 0;}を書くことを覚えておけばよい。
 \end{itemize}
@@ -669,7 +669,7 @@ $x$
 入力:
 \begin{verbatim}
 5 7
-1 2 3 4 5
+1 2 3 5 4
 \end{verbatim}
 出力:
 \begin{verbatim}
@@ -730,7 +730,7 @@ $x$
 入力:
 \begin{verbatim}
 5 7
-1 2 3 4 5
+1 2 3 5 4
 \end{verbatim}
 出力:
 \begin{verbatim}
